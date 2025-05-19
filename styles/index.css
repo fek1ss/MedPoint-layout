@@ -1,0 +1,535 @@
+@import 'variables.css';
+
+header {
+  width: 100%;
+}
+
+.my-navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--white-text);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.content-bar {
+  display: flex;
+  justify-content: center;
+}
+
+.img-logo {
+  margin-left: 38px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top:10px !important;
+}
+
+.li {
+  font-size: 24px;
+  color: var(--accent);
+  margin-right: 24px;
+  text-align: center;
+  cursor: pointer;
+  font-family: var(--main-font);
+}
+
+.li:hover {
+  color: var(--main-color);
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 163px;
+  font-family: var(--main-font);
+}
+
+.sign-in {
+  border: 1px solid #D4CECE;
+  border-radius: 5px;
+  width: 70px;
+  height: 36px;
+  background-color: var(--white-text);
+}
+
+.sign-in a {
+  font-size: 12px;
+  text-align: center; 
+  color: #000;
+}
+
+.register {
+  border: 1px solid #D4CECE;
+  border-radius: 5px;
+  width: 79px;
+  height: 36px;
+  background-color: var(--accent);
+}
+
+.register a {
+  color: var(--white-text);
+  font-size: 14px;
+}
+
+.register:hover {
+  background-color: #5bcec2;
+}
+
+/* ======================================= */
+/* BOOK CONTAINER */
+
+.book-container {
+  width: 100%;
+  height: 440px;
+  display: flex;
+
+}
+
+.book-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 44px;
+}
+
+h1 span {
+  color: var(--accent);
+}
+
+.text-heading {
+  width: 360px;
+}
+
+.appointment {
+  background-color: var(--accent);
+  color: var(--white-text);
+}
+
+/* ============================================ */
+/* FIND CONTAINER */
+
+.find-doctor {
+  margin: 140px auto;
+}
+
+.find-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 776px;
+  height: 232px;
+  border-radius: 10px;
+  background-color: #F5F5F5;
+  box-shadow: var(--shadow);
+}
+
+.find-container h1 {
+  font-size: 24px;
+}
+
+.filter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  background-color: #D9D9D9;
+  border-radius: 10px;
+  width: 676px;
+  height: 40px;
+}
+
+.by {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white-text);
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+  font-family: var(--main-font);
+}
+
+.select {
+  width: 200px;
+  border-radius: 10px;
+  background-color: var(--white-text);
+  box-shadow: var(--shadow);
+}
+
+.select-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-btn {
+  width: 200px;
+  height: 37px;
+  background-color: var(--accent);
+  color: var(--white-text);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow);
+}
+
+/* ============================================= */
+/* Why Choose MedPoint */
+
+.why-choose {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 295px;
+  margin-bottom: 190px;
+}
+
+.why-choose h1 {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.reasons {
+  display: flex;
+  width: 100%;
+}
+
+.reason { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  box-shadow: var(--shadow);
+  width: 340px;
+  height: 155px;
+  border-radius: 10px;
+  padding: 40px;
+  background-color: #F5F5F5;
+}
+
+.icon {
+  width: 38px;
+  height: 38px;
+}
+
+.reason h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.reason p {
+  font-size: 16px;
+}
+
+/* ============================================== */
+/* Popular Doctors  */
+
+.popular-doctors {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+  height: 480px;
+  width: 100%;
+  margin-bottom: 200px;
+}
+
+.title {
+  margin-left: 100px;
+  font-size: 32px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card-doctor {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  border-radius: 10px;
+  width: 252px;
+  height: 400px;
+  margin: 0;
+  background-color: #f6f6f6;
+  padding: 0;
+}
+
+.img-doctor {
+  width: 100%;
+  height: 253px;
+}
+
+.inner-text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin: auto 25px;
+}
+
+.card-doctor h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card-doctor p {
+  font-size: 16px;
+}
+
+.stars {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.star {
+  width: 17px;
+  height: 17px;
+}
+
+.btn-more {
+  background-color: var(--accent);
+  color: var(--white-text);
+  width: 110px;
+  height: 25px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--shadow);
+}
+
+/* ============================================ */
+/* Partner Clinics */
+
+.partner-clinics {
+  width: 100%;
+  height: 500px;
+}
+
+.card-clinic {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  border-radius: 10px;
+  width: 363px;
+  height: 418px;
+  margin: 0;
+  background-color: #f6f6f6;
+  padding: 0;
+}
+
+.img-clinic {
+  width: 363px;
+  height: 270px;
+}
+
+.card-clinic h1 {
+  font-size: 20px;
+}
+
+.card-clinic p {
+  font-size: 16px;
+}
+
+.btn-learMore {
+  color: #000;
+  background-color: var(--white-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 30px;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  margin:  auto;
+}
+
+/* ===================================== */
+/* How does this work */
+
+.instruction {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  gap: 30px;
+  margin: 100px auto;
+}
+
+.instruction h1 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.instruction p {
+  font-size: 16px;
+  width: 213px;
+  text-align: center;
+}
+
+.cards{
+
+}
+
+.card-inst {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+/* ==================================================== */
+/* Start taking care of your health today */
+
+.last-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 330px;
+  width: 100%;
+  background: linear-gradient(to right, #00b0ff, #00f2c3);
+}
+
+.inner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-content h1 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.inner-content p {
+  font-size: 16px;
+}
+
+.container-fuid {
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-register {
+  width: 180px;
+  height: 50px;
+  background-color: var(--white-text);
+  border-radius: 10px;
+}
+
+.btn-find {
+  background: none;
+  border: 1px solid black;
+}
+
+/* ================================================ */
+/* footer  */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 520px;
+  background-color: #111827;
+  padding-top: 37px;
+  padding: auto 30px;
+}
+
+.content-footer {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 95%;
+  height: 90%;
+}
+
+.logo-footer {
+  width: 130px;
+}
+
+.inner-footer p{
+  width: 388px;
+  color: #69616C;
+  font-size: 18px;
+  font-family: var(--main-font);
+}
+
+.footer-title {
+  font-size: 24px;
+  color: var(--white-text);
+  margin-bottom: 40px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 125px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #7D828E;
+  font-family: var(--main-font);
+}
+
+.phone {
+  color: #7D828E;
+  font-size: 18px;
+}
+
+.text-med{
+  color: #7D828E;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.ln {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  font-size: 18px;
+  width: 95%;
+  border-top: 1px solid #7D828E;
+}
+

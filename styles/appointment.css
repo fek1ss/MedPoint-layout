@@ -1,0 +1,217 @@
+@import './variables.css';
+@import './index.css';
+
+.main-content {
+  padding: 20px 0;
+}
+
+.back {
+  color: #9F9999;
+}
+
+section {
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+  margin: 30px;
+  width: 750px;
+}
+
+.doctor {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 244px;
+}
+
+.title-d {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: end;
+}
+
+.h {
+  font-size: 32px;
+}
+
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--accent);
+  color: var(--white-text);
+  font-size: 24px;
+  margin: auto 20px;
+}
+
+.no-wrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.inner-container {
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+  width: 700px;
+  height: 130px;
+  padding: 20px;
+  background-color: #F9FAFB;
+  border: 1px solid #D3D3D4;
+}
+
+.img-avatar {
+  width: 110px;
+  border-radius: 5px;
+}
+
+.info p {
+  margin: 0;
+  color: #969BA4;
+}
+
+.info .name {
+  color: #000;
+}
+
+.btn-change {
+  border-radius: 5px;
+  background-color: var(--white-text);
+  border: 1px solid #D9D9D9;
+}
+
+/* Select Date & Time  */
+
+.select-date {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  height: 330px;
+}
+
+.date {
+  padding: 10px 20px;
+}
+
+.numbers {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  height: 60px;
+}
+
+.number {
+  height: 50px;
+  width: 100px;
+}
+
+.item {
+  text-align: center;
+  font-size: 15px;
+  color: #969BA4;
+}
+
+.btn-number {
+  width: 100px;
+  height: 45px;
+  border-radius: 5px;
+  background-color: var(--white-text);
+  color: #000;
+  border: 1px solid #D9D9D9;
+  
+}
+
+.patient-info {
+  padding-bottom: 20px;
+}
+
+textarea {
+  width: 660px;
+  height: 100px;
+}
+
+.input {
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #919191;
+}
+
+textarea {
+  border-radius: 5px;
+  border: 1px solid #919191;
+}
+
+.t {
+  margin: 0;
+}
+
+.gtip {
+  margin: 10px auto;
+}
+
+/* Payment Method  */
+.payment-method {
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.inner-container p {
+  color: #969BA4;
+}
+
+.checkbox {
+  width: 30px;
+  height: 30px;
+}
+
+.sos {
+  width: 300px;
+  align-items: center;
+}
+
+/* Summary  */
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  width: 360px !important;
+  margin: 25px;
+  height: 550px;
+  padding: 20px auto;
+}
+
+.sum-con {
+  border-bottom: 1px solid #ACACAC;
+}
+
+.summary h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.sum-text {
+  color: #919191;
+  font-size: 16px;
+}
+
+
+.price {
+  font-family: var(--main-font);
+  font-weight: bold;
+}
+
+.btn-confirm {
+  width: 320px;
+  height: 40px;
+  background-color: var(--main-color);
+}

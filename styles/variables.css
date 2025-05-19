@@ -1,0 +1,7 @@
+:root {
+  --main-color: #1f8acc;
+  --accent: #46C8BB;
+  --white-text: #fff;
+  --shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
+  --main-font:"Roboto", sans-serif;
+}
