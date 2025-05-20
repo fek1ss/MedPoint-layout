@@ -1,0 +1,129 @@
+@import './index.css';
+@import './variables.css';
+
+.section-departments {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 90px;
+  height: 260px;
+  width: 100%;
+  background-color: #d2e9f7;
+}
+
+.departments {
+  font-size: 40px;
+  font-family: var(--main-font);
+}
+
+.img1 {
+  width: 252px;
+  height: 600px;
+}
+
+.img2 {
+  width: 500px;
+  height: 600px;
+}
+
+.img3 {
+  width: 226px;
+  height: 600px;
+}
+
+.images {
+  width: 90%;
+  margin: 30px auto;
+  display: flex;
+  gap:20px;
+  justify-content: center;
+}
+
+.img4 {
+  width: 328px;
+  height: 400px;
+}
+
+.img5 {
+  width: 400px;
+  height: 400px;
+}
+
+.img6 {
+  width: 372px;
+  height: 400px;
+}
+/* ================ */
+
+.carousel-item img {
+            height: 400px;
+            object-fit: cover;
+        }
+
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+            bottom: 20px;
+        }
+
+        /* Стили для отображения нескольких элементов */
+        .carousel-inner {
+            display: flex;
+            overflow-x: auto; /* Заменено на overflow-x: auto; */
+            scroll-snap-type: x mandatory;  /* Добавлено для прокрутки по элементам */
+            -webkit-overflow-scrolling: touch; /* Для плавной прокрутки на iOS */
+        }
+
+        .carousel-item {
+            flex: 0 0 33.3333%; /* Три элемента на строку */
+            margin-right: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: stretch;
+            visibility: visible;
+            scroll-snap-align: start; /* Выравнивание по началу элемента при прокрутке */
+        }
+
+        .carousel-inner > .carousel-item > img {
+            flex: 1;
+            object-fit: cover;
+            height: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .carousel-item {
+                flex: 0 0 50%; /* Два элемента на строку на средних экранах */
+            }
+        }
+
+        @media (max-width: 576px) {
+            .carousel-item {
+                flex: 0 0 100%; /* Один элемент на строку на маленьких экранах */
+            }
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 10%; /* Уменьшаем ширину кнопок управления */
+        }
+
+        .carousel-control-prev {
+            margin-left: -5%; /* Сдвигаем кнопку влево */
+        }
+
+        .carousel-control-next {
+            margin-right: -5%; /* Сдвигаем кнопку вправо */
+        }
+
+        /* Добавляем стили для активных элементов */
+        .carousel-inner .active,
+        .carousel-inner .active + .carousel-item,
+        .carousel-inner .active + .carousel-item + .carousel-item {
+            visibility: visible;
+        }
+        .carousel-control-prev,
+        .carousel-control-next {
+          display: none;
+        }
