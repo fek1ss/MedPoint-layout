@@ -1,0 +1,265 @@
+@import './doctors.css';
+@import './index.css';
+@import './variables.css';
+
+
+.section-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 90px;
+  height: 260px;
+  width: 100%;
+  background-color: #d2e9f7;
+}
+
+.title-find {
+  font-size: 40px;
+}
+
+.search-container {
+    width: 800px;
+    background-color: var(--white-text); 
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: var(--shadow); 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    margin: 0 auto;
+  }
+  .input-group {
+    flex: 1; 
+  }
+
+  .btn-search {
+    background-color: var(--accent); 
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+  }
+  
+  .btn-search:hover {
+    background-color: var(--main-color); 
+  }
+  
+  .form-control {
+    border-radius: 5px 0 0 5px; 
+    border-right: none; 
+  }
+        
+  .select-group{
+    border-radius: 0;
+  }
+
+  .btn{
+    border-radius: 0 5px 5px 0;
+  }
+
+
+.found-doctors {
+  padding: 30px;
+}
+
+.filter-text {
+  font-size: 16px;
+}
+
+/* ============================== */
+.filter-container {
+  background-color: var(--white-text);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 250px; 
+}
+  
+  .filter-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+        
+  .specialty-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+        
+  .reset-all {
+    color: var(--main-color);
+    cursor: pointer;
+    font-size: 14px;
+  }
+        
+  .reset-all:hover {
+    text-decoration: underline;
+  }
+        
+  .specialty-list {
+    margin-bottom: 20px;
+  }
+        
+  .specialty-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+        
+  .rating-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+        
+  .rating-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+        
+  .star {
+    color: #ffd700;
+    margin-right: 5px;
+  }
+        
+  .apply-filters {
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+  }
+        
+  .apply-filters:hover {
+    background-color: #0056b3;
+  }
+
+.cards-doctors{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 780px;
+  height: 100%;
+}
+
+
+.card-doctors {
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 224px;
+}
+
+.doctor-img {
+  width: 224px;
+  height: 224px;
+}
+
+.card-doctor-title {
+  font-size: 24px;
+  margin: 0px;
+}
+
+.text-card-doctor  {
+  margin: 0;
+  font-size: 12px;
+}
+
+.about-doctor {
+  font-size: 14px;
+}
+
+.col-4 {
+  margin: 0;
+  padding: 0;
+}
+
+.btns-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.btn-view {
+  width: 230px;
+  height: 30px;
+  border: 1px solid black;
+  color: black;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.btn-book {
+  width: 230px;
+  height: 30px;
+  background-color: var(--accent);
+}
+
+
+.pagination-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .pagination {
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+        }
+        .page-item {
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+        }
+        .page-link {
+            padding: 8px 16px;
+            text-decoration: none;
+            color: #333;
+            border: 1px solid #ddd;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .page-link:hover {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .page-item.active .page-link {
+            background-color: #007bff;
+            color: white;
+            border-color: #007bff;
+        }
+        .page-item:first-child .page-link {
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        .page-item:last-child .page-link {
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        .page-item.disabled .page-link {
+            color: #aaa;
+            pointer-events: none;
+            background-color: #eee;
+            border-color: #ddd;
+        }

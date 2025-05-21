@@ -1,0 +1,81 @@
+@import './index.css';
+@import './variables.css';
+@import './departments.css';
+
+.digits {
+  justify-content: space-around;
+}
+
+.section-departments h1 {
+  font-size: 36px;
+}
+
+.about {
+  width: 100%;
+  height: 530px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--white-text);
+  font-size: 23px;
+}
+
+.taking-care-of-you {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: auto 20px;
+  height: 560px;
+}
+
+.taking-care-of-you h4 {
+  margin: 80px auto;
+}
+
+.cont-two {
+  display: flex;
+  gap: 10px;
+}
+
+.img-taking {
+  width: 300px;
+}
+
+.content {
+  background-color: #d2e9f7;
+  width: 305px;
+  height: 361px;
+}
+
+.partner-clinics {
+  margin: 80px auto;
+}
+
+.clinics {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-clinic {
+  background-color: #F5F5F5;
+  width: 363px;
+  height: 418px;
+  border-radius: 8px;
+}
+
+.img-clinic {
+  width: 363px;
+  height: 270px;
+}
+

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctors</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/doctors.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Jersey+15&family=Kaushan+Script&family=Lobster&family=Pacifico&family=Playwrite+MX+Guides&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Satisfy&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+        <nav class="navbar navbar-expand-lg navbar-light my-navbar fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="images/Final logo.png" alt="logo MedPoint image" class="img-logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse content-bar" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link li" href="./appointment.html">Appointment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link li" href="./departments.html">Department</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link li" href="./doctors.html">Doctors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link li" href="./about.html">About us</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex btns">
+                        <button class="btn sign-in">
+                            <a href="./signin.html">Sign in</a>
+                        </button>
+                        <button class="btn register">
+                            <a href="./register-email.html">Register</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header> 
+    <section class="section-head">
+      <h1 class="text-center title-find">Find the Right Doctor</h1>
+      <div class="container mt-5">
+        <div class="search-container">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search by doctor name or specialty">
+            </div>
+            <div class="input-group">
+                <select class="form-select select-group">
+                      <option selected>All Locations</option>
+                      <option value="1">Almaty</option>
+                      <option value="2">Astana</option>
+                      <option value="3">Shymkent</option>
+                </select>
+            </div>
+
+            <button class="btn btn-search">Search</button>
+        </div>
+    </div>
+    </section>
+    <section class="found-doctors">
+      <div class="row">
+        <div class="col-4">
+          <div class="container mt-5">
+        <div class="filter-container">
+            <div class="filter-title">
+                <h2 class="specialty-title">Filters</h2>
+                <a href="#" class="reset-all">Reset All</a>
+            </div>
+            <div class="specialty-list">
+                <h3 class="specialty-title">Specialty</h3>
+                <div class="specialty-item">
+                    <input type="checkbox" id="general-practitioner">
+                    <label for="general-practitioner" class="ms-2">General Practitioner</label>
+                </div>
+                <div class="specialty-item">
+                    <input type="checkbox" id="cardiologist">
+                    <label for="cardiologist" class="ms-2">Cardiologist</label>
+                </div>
+                <div class="specialty-item">
+                    <input type="checkbox" id="neurologist">
+                    <label for="neurologist" class="ms-2">Neurologist</label>
+                </div>
+                <div class="specialty-item">
+                    <input type="checkbox" id="surgeon">
+                    <label for="surgeon" class="ms-2">Surgeon</label>
+                </div>
+                <div class="specialty-item">
+                    <input type="checkbox" id="gynecologist">
+                    <label for="gynecologist" class="ms-2">Gynecologist</label>
+                </div>
+                <div class="specialty-item">
+                    <input type="checkbox" id="urologist">
+                    <label for="urologist" class="ms-2">Urologist</label>
+                </div>
+                <div class="specialty-item">
+                    <input type="checkbox" id="dermatologist">
+                    <label for="dermatologist" class="ms-2">Dermatologist</label>
+                </div>
+                  <div class="specialty-item">
+                    <input type="checkbox" id="ophthalmologist">
+                    <label for="ophthalmologist" class="ms-2">Ophthalmologist</label>
+                </div>
+                  <div class="specialty-item">
+                    <input type="checkbox" id="obstetrician">
+                    <label for="obstetrician" class="ms-2">Obstetrician</label>
+                </div>
+                  <div class="specialty-item">
+                    <input type="checkbox" id="therapist">
+                    <label for="therapist" class="ms-2">Therapist</label>
+                </div>
+                  <div class="specialty-item">
+                    <input type="checkbox" id="traumatologist">
+                    <label for="traumatologist" class="ms-2">Traumatologist</label>
+                </div>
+            </div>
+            <div class="rating-filter">
+                <h3 class="rating-title">Rating</h3>
+                <div class="rating-item">
+                    <input type="checkbox" id="rating-4-up">
+                    <label for="rating-4-up" class="ms-2">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span> & up
+                    </label>
+                </div>
+                <div class="rating-item">
+                    <input type="checkbox" id="rating-3-up">
+                    <label for="rating-3-up" class="ms-2">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span> & up
+                    </label>
+                </div>
+                <div class="rating-item">
+                    <input type="checkbox" id="rating-2-up">
+                    <label for="rating-2-up" class="ms-2">
+                        <span class="star">★</span>
+                        <span class="star">★</span> & up
+                    </label>
+                </div>
+            </div>
+            <button class="apply-filters">Apply Filters</button>
+        </div>
+    </div>
+        </div>
+        <div class="col-8">
+          <h1 class="card-doctor-title">Found 128 doctors</h1>
+          <div class="container col cards-doctors">
+            <div class="container card-doctors">
+              <div class="row">
+                <div class="col-4">
+                  <img src="images/image42.png" alt="doctor img" class="doctor-img">
+                </div>
+                <div class="col-8 m-0">
+                  <h1 class="card-doctor-title">Dr. Baytoreeva Aysylu </h1>
+                  <p class="text-card-doctor">Cardiologist • 15 years experience</p>
+                  <label for="rating-4-up">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span> 
+                  </label>
+                  <p class="about-doctor">Dr. Baytoreeva is a board-certified cardiologist with expertise in treating heart diseases.</p>
+                  <p class="text-card-doctor">Central Medical Center, Almaty</p>
+                  <div class="btns-container">
+                    <button class="btn btn-view buttons">View Profile</button>
+                    <button class="btn btn-book buttons">Book Appoitment</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container card-doctors">
+              <div class="row">
+                <div class="col-4">
+                  <img src="images/image24.png" alt="doctor img" class="doctor-img">
+                </div>
+                <div class="col-8 m-0">
+                  <h1 class="card-doctor-title">Dr. Baytoreeva Aysylu </h1>
+                  <p class="text-card-doctor">Cardiologist • 15 years experience</p>
+                  <label for="rating-4-up">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span> 
+                  </label>
+                  <p class="about-doctor">Dr. Baytoreeva is a board-certified cardiologist with expertise in treating heart diseases.</p>
+                  <p class="text-card-doctor">Central Medical Center, Almaty</p>
+                  <div class="btns-container">
+                    <button class="btn btn-view buttons">View Profile</button>
+                    <button class="btn btn-book buttons">Book Appoitment</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container card-doctors">
+              <div class="row">
+                <div class="col-4">
+                  <img src="images/image34.png" alt="doctor img" class="doctor-img">
+                </div>
+                <div class="col-8 m-0">
+                  <h1 class="card-doctor-title">Dr. Baytoreeva Aysylu </h1>
+                  <p class="text-card-doctor">Cardiologist • 15 years experience</p>
+                  <label for="rating-4-up">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span> 
+                  </label>
+                  <p class="about-doctor">Dr. Baytoreeva is a board-certified cardiologist with expertise in treating heart diseases.</p>
+                  <p class="text-card-doctor">Central Medical Center, Almaty</p>
+                  <div class="btns-container">
+                    <button class="btn btn-view buttons">View Profile</button>
+                    <button class="btn btn-book buttons">Book Appoitment</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container card-doctors">
+              <div class="row">
+                <div class="col-4">
+                  <img src="images/image9.png" alt="doctor img" class="doctor-img">
+                </div>
+                <div class="col-8 m-0">
+                  <h1 class="card-doctor-title">Dr. Baytoreeva Aysylu </h1>
+                  <p class="text-card-doctor">Cardiologist • 15 years experience</p>
+                  <label for="rating-4-up">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span> 
+                  </label>
+                  <p class="about-doctor">Dr. Baytoreeva is a board-certified cardiologist with expertise in treating heart diseases.</p>
+                  <p class="text-card-doctor">Central Medical Center, Almaty</p>
+                  <div class="btns-container">
+                    <button class="btn btn-view buttons">View Profile</button>
+                    <button class="btn btn-book buttons">Book Appoitment</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container mt-5">
+        <div class="pagination-container">
+            <nav aria-label="Page navigation">
+                <ul class="pagination">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&lt;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&gt;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+          </div>  
+        </div>
+      </div>
+    </section>
+    <!-- footer  -->
+    <footer>
+        <div class="content-footer">
+            <div class="container inner-footer">
+                <img src="images/Final logo.png" alt="" class="logo-footer">
+                <p>
+                Online doctor appointment platform 
+                in Kazakhstan
+                </p>
+        </div>
+        <div class="container">
+            <h1 class="footer-title">Service</h1>
+            <div class="text">
+            <a href="#">About Us</a>
+            <a href="#">Doctors</a>
+            <a href="#">Clinics</a>
+            <a href="#">Reviews</a>
+            </div>
+        </div>
+        <div class="container">
+            <h1 class="footer-title">Information</h1>
+            <a href="#">FAQ Information</a>
+            <a href="#">The blog</a>
+            <a href="#">Terms of use</a>
+            <a href="#">Privacy policy</a>
+        </div>
+        <div class="container">
+            <h1 class="footer-title">Contacts</h1>
+            <p class="phone"> +7 (777) 123-45-67</p>
+            <a href="#">info@medpoint.kz</a>
+            <a href="#">123 Abaya Street, Almaty</a>
+        </div>
+        </div>
+        <div class="ln">
+            <p class="text-med">© 2025 MedPoint. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+</body>
+</html>

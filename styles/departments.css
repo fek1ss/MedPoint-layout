@@ -67,12 +67,11 @@
             bottom: 20px;
         }
 
-        /* Стили для отображения нескольких элементов */
         .carousel-inner {
             display: flex;
-            overflow-x: auto; /* Заменено на overflow-x: auto; */
-            scroll-snap-type: x mandatory;  /* Добавлено для прокрутки по элементам */
-            -webkit-overflow-scrolling: touch; /* Для плавной прокрутки на iOS */
+            overflow-x: auto; 
+            scroll-snap-type: x mandatory; 
+            -webkit-overflow-scrolling: touch;
         }
 
         .carousel-item {
@@ -83,7 +82,7 @@
             justify-content: space-between;
             align-items: stretch;
             visibility: visible;
-            scroll-snap-align: start; /* Выравнивание по началу элемента при прокрутке */
+            scroll-snap-align: start;
         }
 
         .carousel-inner > .carousel-item > img {
@@ -94,30 +93,29 @@
 
         @media (max-width: 768px) {
             .carousel-item {
-                flex: 0 0 50%; /* Два элемента на строку на средних экранах */
+                flex: 0 0 50%; 
             }
         }
 
         @media (max-width: 576px) {
             .carousel-item {
-                flex: 0 0 100%; /* Один элемент на строку на маленьких экранах */
+                flex: 0 0 100%; 
             }
         }
 
         .carousel-control-prev,
         .carousel-control-next {
-            width: 10%; /* Уменьшаем ширину кнопок управления */
+            width: 10%; 
         }
 
         .carousel-control-prev {
-            margin-left: -5%; /* Сдвигаем кнопку влево */
+            margin-left: -5%; 
         }
 
         .carousel-control-next {
-            margin-right: -5%; /* Сдвигаем кнопку вправо */
+            margin-right: -5%; 
         }
 
-        /* Добавляем стили для активных элементов */
         .carousel-inner .active,
         .carousel-inner .active + .carousel-item,
         .carousel-inner .active + .carousel-item + .carousel-item {
@@ -127,3 +125,34 @@
         .carousel-control-next {
           display: none;
         }
+
+.pre-content {
+  margin: 50px 0;
+}
+
+.dep-text {
+  width: 1044px;
+  height: 95px;
+  margin: 0 auto;
+}
+
+.what {
+  color: var(--white-text);
+}
+
+.last-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-find-doctor {
+  width: 262px;
+  height: 50px;
+  background-color: var(--white-text);
+}
+
+.btn-find-doctor:hover {
+  background-color: #f0f0f0;
+}

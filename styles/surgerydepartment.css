@@ -1,0 +1,97 @@
+@import './index.css';
+@import './variables.css';
+
+.head-surgery {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 90px;
+  height: 421px;
+  width: 100%;
+  background-color: #d2e9f7;
+}
+
+.book-btn {
+  width: 260px;
+  height: 50px;
+  font-size: 12px;
+  color: var(--white-text);
+  background-color: var(--accent);
+}
+
+.about-surgery {
+  display: flex;
+  width: 90%;
+  margin: 30px auto;
+}
+
+.about-title {
+  font-size: 32px;
+}
+
+.about-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+.department-highlights {
+  border: 1px solid black;
+  width: 550px;
+  height: 150px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.inner-text {
+  width: 463px;
+  margin: 0;
+  font-size: 16px;
+}
+
+.rows {
+  display: flex;
+}
+
+.our-specialties {
+  margin: 20px;
+}
+
+.list-ul {
+  display: block;
+  list-style-type: disc;
+}
+
+.check {
+  width: 20px;
+  height: 20px;
+}
+
+.our-surgeons-section {
+  margin: 40px auto;
+}
+.our-surgeons {
+  margin: 30px 96px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.last-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  color: var(--white-text);
+}
+
+.btn-find-doctor {
+  width: 262px;
+  height: 50px;
+  background-color: var(--white-text);
+}
+
+.btn-find-doctor:hover {
+  background-color: #f0f0f0;
+}
